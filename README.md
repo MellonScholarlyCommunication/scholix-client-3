@@ -9,7 +9,8 @@ from Scholix data as provided by [ScholeXplorer](https://scholexplorer.openaire.
 - Anystyle (use `gem install anystyle-cli`)
 - Jena riot (JSON-LD processing is required `brew install jena`)
 - gtar `brew install gtar`
-
+- Node.js 18.0 or higher
+  
 # Usage
 
 List all sources / targets
@@ -34,7 +35,7 @@ bin/scholix2events.groovy data/ghent.json > data/ghent.events
 Create inbox folder for the events
 
 ```
-bin/mkinbox.sh data/ghent.events out
+bin/mkinbox.sh data/ghent.events out/test/scholix/
 ```
 
 Create a Gephi graph for a repository

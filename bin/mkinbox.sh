@@ -5,8 +5,8 @@
 # The generated outdir should be placed on your SOLIDBASE
 #
 
-SOLIDBASE="https://bellow2.ugent.be/test/scholix"
-WEBID="https://bellow2.ugent.be/test/profile/card#me"
+SOLIDBASE="http://localhost:3000/test/scholix"
+WEBID="http://localhost:3000/test/profile/card#me"
 EMAIL="test@test.edu"
 
 function show_help {
