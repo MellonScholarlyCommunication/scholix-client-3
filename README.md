@@ -1,7 +1,8 @@
 # Scholix Client
 
-Groovy tools to generate LDN Notifications following our [Mellon Spec](https://mellonscholarlycommunication.github.io/spec-notifications/#the-artifact-context)
-from Scholix data as provided by [ScholeXplorer](https://scholexplorer.openaire.eu/#/)
+Groovy tools to generate LDN Notifications following our [Mellon Spec](https://mellonscholarlycommunication.github.io/spec-notifications/#the-artifact-context) from Scholix data as provided by [ScholeXplorer](https://scholexplorer.openaire.eu/#/).
+
+This is an updated version of https://github.com/MellonScholarlyCommunication/scholix-client.
 
 # Dependency
 
