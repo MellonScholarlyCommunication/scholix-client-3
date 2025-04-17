@@ -7,7 +7,7 @@ import groovy.json.JsonOutput
 import groovy.transform.Field
 import groovy.cli.commons.CliBuilder
 
-@Field String MOCK_BASE_POD = 'https://bellow2.ugent.be/test/scholix/'
+@Field String MOCK_BASE_POD = 'http://localhost:3000/test/scholix/'
 @Field String EMAIL = "Patrick.Hochstenbach@UGent.be"
 @Field CLIENT = new ScholixClient()
 

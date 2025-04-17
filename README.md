@@ -16,33 +16,36 @@ from Scholix data as provided by [ScholeXplorer](https://scholexplorer.openaire.
 List all sources / targets
 
 ```
-bin/list_providers.sh
+./bin/list_providers.sh
 ```
 
 Fetch JSON records for one source/target
 
 ```
-bin/scholix_client.groovy links targetPublisher "Ghent University" > data/ghent.json
-bin/scholix_client.groovy links sourcePublisher "Ghent University" >> data/ghent.json
+./bin/scholix_client.groovy links targetPublisher "Ghent University" > data/ghent.json
+./bin/scholix_client.groovy links sourcePublisher "Ghent University" >> data/ghent.json
 ```
 
 Convert JSON to events
 
 ```
-bin/scholix2events.groovy data/ghent.json > data/ghent.events
+./bin/scholix2events.groovy data/ghent.json > data/ghent.events
 ```
 
-Create inbox folder for the events
+Create inbox folder for the events:
 
 ```
-bin/mkinbox.sh data/ghent.events out/test/scholix/
+./bin/mkinbox.sh data/ghent.events out/test/scholix
 ```
 
-Create a Gephi graph for a repository
+Post the events to the inboxes:
 
 ```
-bin/events2graph.groovy  out/biblio/biblio.ugent.be > data/biblio.gexf
-bin/events2graph.groovy  out/antwerpen/repository.uantwerpen.be > data/antwerpen.gexf
-bin/events2graph.groovy  out/liege/orbi.uliege.be/ > data/liege.gexf
-bin/events2graph.groovy  out/belgium/ > data/belgium.gexf
+./bin/events2inbox.groovy data/ghent.events
+```
+
+Create a Gephi graph for a repository:
+
+```
+bin/events2graph.groovy  out/test/scholix/biblio.ugent.be > data/biblio.gexf
 ```
